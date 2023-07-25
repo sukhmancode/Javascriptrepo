@@ -12,8 +12,11 @@ submit.addEventListener('click',function(e){
     if(names.value===""){
         alert("name field cant be empty")
     }
+    if(email.value===""){
+        alert("email field cant be empty")
+    }
     else if(!email.value.match(validRegex)){
-        alert("email is Invalid or empty")
+        alert("email is Invalid ")
     }
     
     else{
