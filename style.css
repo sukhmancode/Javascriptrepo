@@ -17,10 +17,11 @@ body{
     flex-direction: column;
     padding:3rem;
     background-color: #ccc;
-    border-radius: 4px;
-    max-width: 400px;
+    border-radius: 21px;
+    min-width: 600px;
 }
 form{
+
     display: flex;
     flex-direction: column;
     gap:30px;
@@ -31,6 +32,7 @@ label{
     display: block;
 }
 input{
+    width: 400px;
     box-shadow: 0 0 4px #ccc;
     outline: none;
     border-radius: 10px;
@@ -38,6 +40,7 @@ input{
     border: none;
 }
 input[type="submit"]{
+    width:100px;
     padding:1rem;
     background-color: blue;
     color: #fff;
@@ -46,4 +49,9 @@ input[type="submit"]{
     cursor: pointer;
     font-weight: 700;
 
+}
+small{
+    display: block;
+    color: red;
+    font-size: 15px;
 }

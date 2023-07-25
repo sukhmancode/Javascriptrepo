@@ -6,17 +6,22 @@ const userlist=document.getElementById('user-list')
 var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 
+
 submit.addEventListener('click',function(e){
     submit.style.opacity="0.7"
     e.preventDefault();
     if(names.value===""){
-        alert("name field cant be empty")
+        document.querySelector('.error-name').innerHTML="Name field cant be empty";
+       
+    }else{
+        document.querySelector('.error-name').innerHTML="";
     }
     if(email.value===""){
-        alert("email field cant be empty")
+        document.querySelector('.error-email').innerHTML="Email is empty"
     }
+    
     else if(!email.value.match(validRegex)){
-        alert("email is Invalid ")
+        document.querySelector('.error-email').innerHTML="Email is invalid"
     }
     
     else{
